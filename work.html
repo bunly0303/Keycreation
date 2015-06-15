@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>キークリエーション様|事業内容</title>
+	<meta name="robots" content="index,follow">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="assets/js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        $(function(){
+         $('a img').hover(function(){
+            $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+              }, function(){
+                 if (!$(this).hasClass('currentPage')) {
+                 $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+                }
+           });
+        });
+    </script>
+    <script>
+        OnMouse = new Array();    /*配列でcube_00.png 〜 cube_03.png  までの4個の画像を選べるようにしています*/
+            for(i = 0; i < 7; i++) {
+            OnMouse[i] = new Image();
+            OnMouse[i].src = "assets/img/page/recruit/cube_0" + i + ".png"
+            }
+        function cImg(flag) {    /*関数cImg の「flag」の数字を変えれば、適切な画像を選べるようにしています*/
+            var imgEle = document.getElementById('imgmap');    /*<img>要素に付けたIDで呼び出しています*/
+            imgEle.src = OnMouse[flag].src;
+            return false;
+        }
+    </script>
+    </head>
+<body>
+	<!-- ▼Google Analyticsトラッキングコード▼ -->
+	<!-- ▲Google Analyticsトラッキングコード▲ -->
+    
+    
+	<header class="l-header">
+        <nav class="l-navi">        
+            <div class="wrap">
+                <ul>
+                    <li class="sitemap"><a href="sitemap.html"><img src="assets/img/layout/navi/navi_01_off.png" width="76" height="20" alt="サイトマップ"></a></li>
+                    <li><a href="#"><img src="assets/img/layout/navi/navi_02_off.png" width="68" height="20" alt="アクセス"></a></li>
+                </ul>
+            </div><!-- /.l-wrap -->
+        </nav><!-- /.l-navi -->  
+        
+        <div class="l-header-logo-menu cf">
+            <div class="wrap">
+                <div class="l-header-logo"><a href="#"><img src="assets/img/layout/header/header_logo.png" width="148" height="98" alt="サイトヘッダーロゴ"></a></div><!-- /.l-header-logo -->
+                <div class="l-header-navi">
+                    <nav>
+                        <ul>
+                            <li class="sitemap"><a href="./"><img src="assets/img/layout/header/header_navi_01_off.png" width="119" height="45" alt="ホーム"></a></li>
+                            <li class="sitemap"><a href="company.html"><img src="assets/img/layout/header/header_navi_02_off.png" width="119" height="45" alt="会社概要"></a></li>
+                            <li class="sitemap"><a href="work.html"><img src="assets/img/layout/header/header_navi_03_off.png" width="119" height="45" alt="事業内容"></a></li>
+                            <li class="sitemap"><a href="development.html"><img src="assets/img/layout/header/header_navi_04_off.png" width="119" height="45" alt="開発実績"></a></li>
+                            <li class="sitemap"><a href="recruit.html"><img src="assets/img/layout/header/header_navi_05_off.png" width="119" height="45" alt="採用情報"></a></li>
+                            <li class="sitemap"><a href="contact.html"><img src="assets/img/layout/header/header_navi_06_off.png" width="119" height="45" alt="お問い合わせ"></a></li>
+                        </ul>
+                    </nav>
+                    <h2><img src="assets/img/layout/header/header_h2_work.png" width="27" height="32" alt="事業内容"><span>事業内容</span></h2>
+                </div><!-- /.l-header-navi -->   
+            </div><!-- /.l-wrap -->
+        </div><!-- /.l-header-logo-menu -->
+	</header><!-- /.l-header -->
+
+	<section class="l-page-contents">
+        <h3>事業内容</h3>
+        <div class="work-txt cf">
+            <div class="work-thumb"><img src="assets/img/page/work/777.jpg" width="335" height="203" alt="777"></div>
+            <div class="text">
+                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>                    
+            </div>
+        </div><!-- work-txt -->
+
+        <h3>組織図</h3> 
+        <div class="chart"><img src="assets/img/page/work/organization_chart.png" width="685" height="240" alt="組織図"></div><!--/.chart -->
+        <div class="cube">
+            <div class="wrap-img">
+                <img id="imgmap" src="assets/img/page/recruit/cube.png" width="824" height="170" usemap="#cube">
+                <map name="cube">
+                    <area shape=poly coords="2,65,5,143,84,154,119,118,113,40,35,30" href="#01" alt="ゲーム企画"
+                     onMouseOver="cImg(1)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="180,74,196,59,268,81,248,151,233,165,160,144" href="#02" alt="出玉設計"
+                     onMouseOver="cImg(2)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="303,59,327,2,388,3,413,43,391,102,328,92" href="#03" alt="メインプログラム"
+                     onMouseOver="cImg(3)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="451,70,518,57,541,80,547,145,480,158,460,136" href="#04" alt="サーブプログラム"
+                     onMouseOver="cImg(4)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="580,46,607,14,664,15,680,74,651,106,594,101" href="#05" alt="メカ"
+                     onMouseOver="cImg(5)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="729,63,743,54,824,81,798,162,784,170,703,143" href="#06" alt="ハード"
+                     onMouseOver="cImg(6)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                </map>            
+            </div>
+        </div><!--/.cube -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+            <h4 id="01"><img src="assets/img/page/work/h4_01.png" width="826" height="26" alt="ゲーム企画"></h4>
+            <div class="thumb">
+                <img src="assets/img/page/work/work_thumb_01.jpg" width="226" height="144" alt="">
+            </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (ゲーム企画) -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+                <h4 id="02"><img src="assets/img/page/work/h4_02.png" width="826" height="26" alt="出玉設計"></h4>
+                <div class="thumb">
+                    <img src="assets/img/page/work/work_thumb_02.jpg" width="226" height="144" alt="">
+                </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (出玉設計) -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+                <h4 id="03"><img src="assets/img/page/work/h4_03.png" width="826" height="26" alt="メインプログラム"></h4>
+                <div class="thumb">
+                    <img src="assets/img/page/work/work_thumb_03.jpg" width="226" height="144" alt="">
+                </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (メインプログラム) -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+                <h4 id="04"><img src="assets/img/page/work/h4_04.png" width="826" height="26" alt="サーブプログラム"></h4>
+                <div class="thumb">
+                    <img src="assets/img/page/work/work_thumb_04.jpg" width="226" height="144" alt="">
+                </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (サーブプログラム) -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+                <h4 id="05"><img src="assets/img/page/work/h4_05.png" width="826" height="26" alt="メカ"></h4>
+                <div class="thumb">
+                    <img src="assets/img/page/work/work_thumb_05.jpg" width="226" height="144" alt="">
+                </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (メカ) -->
+
+        <div class="mainbox-wrap">
+            <div class="mainbox cf">
+                <h4 id="06"><img src="assets/img/page/work/h4_06.png" width="826" height="26" alt="ハード"></h4>
+                <div class="thumb">
+                    <img src="assets/img/page/work/work_thumb_06.jpg" width="226" height="144" alt="">
+                </div><!-- /.thumb -->
+                <div class="text">
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </div>
+        </div><!-- /.mainbox-wrap (ハード) -->
+
+        <div class="back-to-top"><a href="#"><img src="assets/img/page/company/back_to_top.jpg" width="114" height="61" alt="トップページへ戻る"></a></div><!-- /.back-to-top -->
+	</section><!-- /.l-page-contents -->
+
+	<footer class="l-footer">
+		<div class="wrap">
+            <div class="l-footer-logo">
+                <img src="assets/img/layout/footer/footer_logo.png" width="90" height="62" alt="フッターロゴ">
+            </div><!-- /.l-footer logo -->                       
+            
+            <div class="l-footer-company-info">
+                <p class="l-footer-company-name">株式会社KEYクリエーション </p>   
+                <p class="l-footer-address">〒141-0032<br>東京都品川区大崎1-11-2<br>ゲートシティ大崎イーストタワー22階</p>
+                <p class="l-footer-tel">TEL.03-5436-7127 </p>
+            </div><!-- /.l-footer-company-info -->
+            
+			<nav class="l-footer-navi">
+				<ul class="footer-navi-list float-list">
+					<li><a href="./">&gt;TOP</a></li>
+					<li><a href="company.html">&gt;会社概要</a></li>
+					<li><a href="work.html">&gt;事業内容</a></li>
+					<li><a href="development.html">&gt;開発実績</a></li>
+					<li><a href="recruit.html">&gt;採用情報</a></li>
+					<li><a href="contact.html">&gt;お問い合わせ</a></li>
+				</ul>
+			</nav><!-- /.l-footer-navi -->
+		</div><!-- /.wrap -->
+        
+        <div class="l-copyright">
+            2015 (c) KEY CREATION . All Rights Reserved. 
+        </div><!-- /.l-copyright -->
+	</footer><!-- /.l-footer -->
+</body>
+</html>

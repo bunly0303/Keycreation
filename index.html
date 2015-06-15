@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>キークリエーション様</title>
+	<meta name="robots" content="index,follow">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="./assets/js/common.js"></script>    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        $(function(){
+         $('a img').hover(function(){
+            $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+              }, function(){
+                 if (!$(this).hasClass('currentPage')) {
+                 $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+                }
+           });
+        });
+    </script>
+    <script>
+        OnMouse = new Array();    /*配列でtop_content_00.png 〜 top_content_05.png  までの4個の画像を選べるようにしています*/
+            for(i = 0; i < 7; i++) {
+            OnMouse[i] = new Image();
+            OnMouse[i].src = "assets/img/top/top_content_0" + i + ".png"
+            }
+        function cImg(flag) {    /*関数cImg の「flag」の数字を変えれば、適切な画像を選べるようにしています*/
+            var imgEle = document.getElementById('imgmap');    /*<img>要素に付けたIDで呼び出しています*/
+            imgEle.src = OnMouse[flag].src;
+            return false;
+        }
+    </script>
+</head>
+<body>
+	<!-- ▼Google Analyticsトラッキングコード▼ -->
+	<!-- ▲Google Analyticsトラッキングコード▲ -->
+    
+    
+	<header class="l-header">
+        <nav class="l-navi">        
+            <div class="wrap">
+                <ul>
+                    <li class="sitemap"><a href="sitemap.html"><img src="assets/img/layout/navi/navi_01_off.png" width="76" height="20" alt="サイトマップ"></a></li>
+                    <li><a href="#"><img src="assets/img/layout/navi/navi_02_off.png" width="68" height="20" alt="アクセス"></a></li>
+                </ul>
+            </div><!-- /.l-wrap -->
+        </nav><!-- /.l-navi -->     
+	</header><!-- /.l-header -->
+
+	<section class="l-contents">
+		<div class="wrap cf">
+			<div class="l-contents-logo">
+				<a href="#"><img src="assets/img/layout/content_logo.png" width="216" height="149" alt="サイトヘッダーロゴ"></a>
+			</div> <!-- /.l-contents-logo -->
+            <div class="l-contents-img">
+                <img id="imgmap" src="assets/img/top/top_content_00.png" width="692" height="435" usemap="#top">
+                <map name="top">
+                    <area shape=poly coords="43,132,89,65,163,80,195,139,148,208,79,190" href="work.html" alt="事業内容"
+                     onMouseOver="cImg(1)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="261,279,280,199,335,175,411,212,390,297,338,315" href="recruit.html" alt="採用情報"
+                     onMouseOver="cImg(2)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="386,115,465,110,506,156,485,235,457,236,429,220,412,213,397,204,380,196,365,189" href="development.html" alt="開発実績"
+                     onMouseOver="cImg(3)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="413,18,492,10,527,59,510,134,489,136,467,110,408,113,390,91" href="company.html" alt="会社概要"
+                     onMouseOver="cImg(4)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                    <area shape=poly coords="579,301,628,284,692,345,652,411,596,424,538,364" href="contact.html" alt=""
+                     onMouseOver="cImg(5)" onMouseOut="cImg(0)" onClick="cImg(0)">
+                </map> 
+            </div><!-- /.l-contents-img -->           
+		</div>
+	</section><!-- /.l-contents -->
+
+	<footer class="l-footer">
+		<div class="wrap">
+            <div class="l-footer-logo">
+                <img src="assets/img/layout/footer/footer_logo.png" width="90" height="62" alt="フッターロゴ">
+            </div><!-- /.l-footer logo -->                       
+            
+            <div class="l-footer-company-info">
+                <p class="l-footer-company-name">株式会社KEYクリエーション </p>   
+                <p class="l-footer-address">〒141-0032<br>東京都品川区大崎1-11-2<br>ゲートシティ大崎イーストタワー22階</p>
+                <p class="l-footer-tel">TEL.03-5436-7127 </p>
+            </div><!-- /.l-footer-company-info -->
+            
+			<nav class="l-footer-navi">
+				<ul class="footer-navi-list float-list">
+					<li><a href="#">&gt;TOP</a></li>
+					<li><a href="company.html">&gt;会社概要</a></li>
+					<li><a href="work.html">&gt;事業内容</a></li>
+					<li><a href="development.html">&gt;開発実績</a></li>
+					<li><a href="recruit.html">&gt;採用情報</a></li>
+					<li><a href="contact.html">&gt;お問い合わせ</a></li>
+				</ul>
+			</nav><!-- /.l-footer-navi -->
+		</div><!-- /.wrap -->
+        
+        <div class="l-copyright">
+            2015 (c) KEY CREATION . All Rights Reserved. 
+        </div><!-- /.l-copyright -->
+	</footer><!-- /.l-footer -->
+</body>
+</html>

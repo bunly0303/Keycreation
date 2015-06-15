@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>キークリエーション様|開発実績</title>
+	<meta name="robots" content="index,follow">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="assets/js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+        $(function(){
+         $('a img').hover(function(){
+            $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+              }, function(){
+                 if (!$(this).hasClass('currentPage')) {
+                 $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+                }
+           });
+        });
+    </script>
+</head>
+<body>
+	<!-- ▼Google Analyticsトラッキングコード▼ -->
+	<!-- ▲Google Analyticsトラッキングコード▲ -->
+    
+    
+	<header class="l-header">
+        <nav class="l-navi">        
+            <div class="wrap">
+                <ul>
+                    <li class="sitemap"><a href="sitemap.html"><img src="assets/img/layout/navi/navi_01_off.png" width="76" height="20" alt="サイトマップ"></a></li>
+                    <li><a href="#"><img src="assets/img/layout/navi/navi_02_off.png" width="68" height="20" alt="アクセス"></a></li>
+                </ul>
+            </div><!-- /.l-wrap -->
+        </nav><!-- /.l-navi -->  
+        
+        <div class="l-header-logo-menu cf">
+            <div class="wrap">
+                <div class="l-header-logo"><a href="#"><img src="assets/img/layout/header/header_logo.png" width="148" height="98" alt="サイトヘッダーロゴ"></a></div><!-- /.l-header-logo -->
+                <div class="l-header-navi">
+                    <nav>
+                        <ul>
+                            <li class="sitemap"><a href="./"><img src="assets/img/layout/header/header_navi_01_off.png" width="119" height="45" alt="ホーム"></a></li>
+                            <li class="sitemap"><a href="company.html"><img src="assets/img/layout/header/header_navi_02_off.png" width="119" height="45" alt="会社概要"></a></li>
+                            <li class="sitemap"><a href="work.html"><img src="assets/img/layout/header/header_navi_03_off.png" width="119" height="45" alt="事業内容"></a></li>
+                            <li class="sitemap"><a href="development.html"><img src="assets/img/layout/header/header_navi_04_off.png" width="119" height="45" alt="開発実績"></a></li>
+                            <li class="sitemap"><a href="recruit.html"><img src="assets/img/layout/header/header_navi_05_off.png" width="119" height="45" alt="採用情報"></a></li>
+                            <li class="sitemap"><a href="contact.html"><img src="assets/img/layout/header/header_navi_06_off.png" width="119" height="45" alt="お問い合わせ"></a></li>
+                        </ul>
+                    </nav>
+                    <h2><img src="assets/img/layout/header/header_h2_development.png" width="27" height="32" alt="開発実績"><span>開発実績</span></h2>
+                </div><!-- /.l-header-navi -->   
+            </div><!-- /.l-wrap -->
+        </div><!-- /.l-header-logo-menu -->
+	</header><!-- /.l-header -->
+
+	<section class="l-contents">
+		<div class="wrap-page-contents cf">
+            <h3>開発実績</h3>
+            <ul class="development-list">
+                <li><img src="assets/img/page/development/development_01.jpg" width="308" height="214" alt="ぱちスロ必殺仕事人"></li>
+                <li><img src="assets/img/page/development/development_02.jpg" width="308" height="214" alt="ぱちスロ AKB48"></li>
+            </ul>        
+		</div><!-- /.l-wrap-page-content -->
+        
+        <div class="l-page-development-back-to-top"><a href="#"><img src="assets/img/page/company/back_to_top.jpg" width="114" height="61" alt="トップページへ戻る"></a></div><!-- /.back-to-top -->　　　　　
+	</section><!-- /.l-contents -->
+
+	<footer class="l-footer">
+		<div class="wrap">
+            <div class="l-footer-logo">
+                <img src="assets/img/layout/footer/footer_logo.png" width="90" height="62" alt="フッターロゴ">
+            </div><!-- /.l-footer logo -->                       
+            
+            <div class="l-footer-company-info">
+                <p class="l-footer-company-name">株式会社KEYクリエーション </p>   
+                <p class="l-footer-address">〒141-0032<br>東京都品川区大崎1-11-2<br>ゲートシティ大崎イーストタワー22階</p>
+                <p class="l-footer-tel">TEL.03-5436-7127 </p>
+            </div><!-- /.l-footer-company-info -->
+            
+			<nav class="l-footer-navi">
+				<ul class="footer-navi-list float-list">
+					<li><a href="./">&gt;TOP</a></li>
+					<li><a href="company.html">&gt;会社概要</a></li>
+					<li><a href="work.html">&gt;事業内容</a></li>
+					<li><a href="development.html">&gt;開発実績</a></li>
+					<li><a href="recruit.html">&gt;採用情報</a></li>
+					<li><a href="contact.html">&gt;お問い合わせ</a></li>
+				</ul>
+			</nav><!-- /.l-footer-navi -->
+		</div><!-- /.wrap -->
+        
+        <div class="l-copyright">
+            2015 (c) KEY CREATION . All Rights Reserved. 
+        </div><!-- /.l-copyright -->
+	</footer><!-- /.l-footer -->
+</body>
+</html>
